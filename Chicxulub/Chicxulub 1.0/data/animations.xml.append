@@ -1,0 +1,16 @@
+<animSheet name="laser_scorch" w="256" h="60" fw="16" fh="60">weapons/laser_scorch_strip16.png</animSheet>
+<weaponAnim name="laser_scorch">
+	<sheet>laser_scorch</sheet>
+	<desc length="16" x="0" y="0"/>
+	<chargedFrame>9</chargedFrame>
+	<fireFrame>12</fireFrame>
+	<firePoint  x="10" y="16"/>
+	<mountPoint x="2" y="44"/>
+</weaponAnim>
+
+<animSheet name="scorch" w="200" h="20" fw="50" fh="20">weapons/scorch_strip4.png</animSheet>
+<anim name="scorch">
+	<sheet>scorch</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.5</time>
+</anim>

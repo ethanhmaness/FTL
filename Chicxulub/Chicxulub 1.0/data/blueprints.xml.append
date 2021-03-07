@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<weaponBlueprint name="LASER_MANMELTER">
+	<type>LASER</type>
+	<title>Manmelter Laser</title>
+	<short>Manmelter</short>
+	<tip>tip_laser</tip>
+	<desc>Fires a super-heated plasma shot, capable of dealing damage, lighting fires, and hurting crew.</desc>
+	<tooltip>Artillery: Plasma laser that deals damage, starts fires, and hurts crew.</tooltip>
+	<damage>1</damage>
+	<persDamage>2</persDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>10</fireChance>
+	<cooldown>8</cooldown>
+	<speed>60</speed>
+	<power>1</power>
+	<cost>25</cost>
+	<bp>0</bp>
+	<rarity>0</rarity>
+	<image>scorch</image>
+	<launchSounds>
+		<sound>scorchLaser1</sound>
+		<sound>scorchLaser2</sound>
+		<sound>scorchLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_scorch</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_ROCK_2" layout="chicxulub" img="chicxulub">
+	<class id="text_PLAYER_SHIP_ROCK_2_class"/>
+	<name id="text_PLAYER_SHIP_ROCK_2_name"/>
+	<desc id="text_PLAYER_SHIP_ROCK_2_desc"/>
+	<systemList>
+		<artillery power="1" room="9" start="false" weapon="ARTILLERY_FED" img="room_artillery" />
+		<battery power="1" room="12" start="false" img="room_battery_14" />
+		<cloaking power="1" room="10" start="false" img="room_cloaking_10" />
+		<clonebay power="1" room="8" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="2" start="true" img="room_doors_8">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" room="6" start="false" img="room_drones_14" />
+		<engines power="1" room="4" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="3" start="false" img="room_hacking_2" />
+		<medbay power="1" room="8" start="true" img="room_medbay_3">
+			<slot>
+				<number>3</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="1" start="false" img="room_mind_5" />
+		<oxygen power="1" room="0" start="true" img="room_oxygen_4" />
+		<pilot power="1" room="16" start="true" img="room_pilot_4">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="11" start="true" img="room_sensors_6">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="15" start="true" img="room_shields_9">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="14" start="true" />
+		<weapons power="2" room="7" start="true" img="room_weapons_6">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="18" count="3">
+		<weapon name="LASER_MANMELTER" />
+		<weapon name="BOMB_1" />
+	</weaponList>
+	<droneList drones="0" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="rock" />
+	<crewCount amount="1" class="rock" />
+	<crewCount amount="1" class="rock" />
+	<aug name="FIRE_EXTINGUISHERS" />
+</shipBlueprint>

@@ -1,0 +1,183 @@
+<!-- weapons -->
+
+<weaponBlueprint name="LASER_SCORCH">
+	<type>LASER</type>
+	<title>Scorch Shot Laser</title>
+	<short>Scorch Shot</short>
+	<tip>tip_laser</tip>
+	<desc>Fires a super-heated plasma shot, capable of dealing damage and lighting fires.</desc>
+	<tooltip>Artillery: Plasma laser that deals damage and starts fires</tooltip>
+	<damage>1</damage>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>10</fireChance>
+	<cooldown>9</cooldown>
+	<speed>60</speed>
+	<power>1</power>
+	<cost>50</cost>
+	<bp>6</bp>
+	<rarity>2</rarity>
+	<image>scorch</image>
+	<launchSounds>
+		<sound>scorchLaser1</sound>
+		<sound>scorchLaser2</sound>
+		<sound>scorchLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_scorch</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="FLAK_SCORCH">
+	<type>BURST</type>
+	<flavorType id="weapon_SHOTGUN_flavorType"/>
+	<title>Scorch Flak Mark I</title>
+	<short>Scorch Flak I</short>
+	<tip>Tip: Targets an area instead of a single room. This loss of accuracy means more firepower and than its laser counterpart.</tip>
+	<desc>Fires a blast of super-heated debris across a random area doing up to 2 damage and lighting fires.</desc>
+	<tooltip>Artillery: Fires a blast of super-heated debris across a random area doing up to 2 damage and lighting fires.</tooltip>
+	<drone_targetable>1</drone_targetable>
+	<radius>32</radius>
+	<damage>1</damage>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<spin>720</spin>
+	<fireChance>10</fireChance>
+	<cooldown>10</cooldown>
+	<power>2</power>
+	<cost>65</cost>
+	<bp>10</bp>
+	<speed>26</speed>
+	<rarity>2</rarity>
+	<projectiles>
+		<projectile count="2" fake="false">scorch_debris</projectile>
+		<projectile count="3" fake="true">scorch_spark</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>flak</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>burst_scorch</weaponArt>
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="FLAK_SCORCH_2">
+	<type>BURST</type>
+	<flavorType id="weapon_SHOTGUN_2_flavorType"/>
+	<title>Scorch Flak Mark II</title>
+	<short>Scorch Flak II</short>
+	<tip>Tip: Targets an area instead of a single room. This loss of accuracy means more firepower and than its laser counterpart.</tip>
+	<desc>Fires a blast of super-heated debris across a random area doing up to 5 damage and lighting fires.</desc>
+	<tooltip>Artillery: Fires a blast of super-heated debris across a random area doing up to 5 damage and lighting fires.</tooltip>
+	<drone_targetable>1</drone_targetable>
+	<radius>49</radius>
+	<damage>1</damage>
+	<persDamage>1</persDamage>
+	<spin>720</spin>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>10</fireChance>
+	<cooldown>18</cooldown>
+	<power>3</power>
+	<cost>80</cost>
+	<bp>10</bp>
+	<speed>26</speed>
+	<rarity>5</rarity>
+	<projectiles>
+		<projectile count="5" fake="false">scorch_debris</projectile>
+		<projectile count="9" fake="true">scorch_spark</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>flak</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>burst_scorch_2</weaponArt>
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<!-- drone -->
+
+<weaponBlueprint name="DRONE_SCORCH" NOLOC="1">
+	<type>LASER</type>
+	<title>Drone Scorch</title>
+	<damage>1</damage>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<rarity>0</rarity>
+	<image>scorch</image>
+	<launchSounds>
+		<sound>scorchLaser1</sound>
+		<sound>scorchLaser2</sound>
+		<sound>scorchLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_scorch</weaponArt>
+</weaponBlueprint>
+
+<droneBlueprint name="COMBAT_SCORCH">
+	<type>COMBAT</type>
+	<tip>tip_combat</tip>
+	<title>Anti-Ship Scorch Drone</title>
+	<short>Scorch</short>
+	<desc>Combat drone that repeatedly attacks with a small plasma laser weapon that deals damage and lights rooms on fire.</desc>
+	<power>3</power>
+	<cooldown>1000</cooldown> <!-- Doesn't affect combat drone -->
+	<dodge>0</dodge>
+	<speed>15</speed>
+	<cost>60</cost>
+	<bp>8</bp>
+	<droneImage>drone_scorch</droneImage>
+	<weaponBlueprint>DRONE_SCORCH</weaponBlueprint>
+	<rarity>4</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>

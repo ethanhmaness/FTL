@@ -1,0 +1,50 @@
+<animSheet name="laser_scorch" w="256" h="60" fw="16" fh="60">weapons/laser_scorch_strip16.png</animSheet>
+<weaponAnim name="laser_scorch">
+	<sheet>laser_scorch</sheet>
+	<desc length="16" x="0" y="0"/>
+	<chargedFrame>9</chargedFrame>
+	<fireFrame>12</fireFrame>
+	<firePoint  x="10" y="16"/>
+	<mountPoint x="2" y="44"/>
+</weaponAnim>
+
+<animSheet name="burst_scorch" w="364" h="60" fw="26" fh="60">weapons/burst_scorch_strip14.png</animSheet>
+<weaponAnim name="burst_scorch">
+	<sheet>burst_scorch</sheet>
+	<desc length="14" x="0" y="0"/>
+	<chargedFrame>7</chargedFrame>
+	<fireFrame>9</fireFrame>
+	<firePoint  x="14" y="31"/>
+	<mountPoint x="3" y="42"/>
+</weaponAnim>
+
+<animSheet name="burst_scorch_2" w="476" h="60" fw="28" fh="60">weapons/burst_scorch_2_strip17.png</animSheet>
+<weaponAnim name="burst_scorch_2">
+	<sheet>burst_scorch_2</sheet>
+	<desc length="17" x="0" y="0"/>
+	<chargedFrame>10</chargedFrame>
+	<fireFrame>12</fireFrame>
+	<firePoint  x="14" y="29"/>
+	<mountPoint x="3" y="40"/>
+</weaponAnim>
+
+<animSheet name="scorch" w="200" h="20" fw="50" fh="20">weapons/scorch_strip4.png</animSheet>
+<anim name="scorch">
+	<sheet>scorch</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.5</time>
+</anim>
+
+<animSheet name="scorch_debris" w="64" h="32" fw="32" fh="32">weapons/scorch_debris_strip2.png</animSheet>
+<anim name="scorch_debris">
+	<sheet>scorch_debris</sheet>
+	<desc length="2" x="0" y="0"/>
+	<time>0.5</time>
+</anim>
+
+<animSheet name="scorch_spark" w="128" h="16" fw="16" fh="16">weapons/scorch_spark_strip8.png</animSheet>
+<anim name="scorch_spark">
+	<sheet>scorch_spark</sheet>
+	<desc length="8" x="0" y="0"/>
+	<time>0.3</time>
+</anim>
